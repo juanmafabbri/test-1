@@ -1,0 +1,51 @@
+name: Evaluate Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  iq-evaluation:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@v4
+
+    - name: print token
+      id: printToken
+      run: echo "${{ github.token }}"
+    
+    - name: IQ Evaluate
+      id: evaluate
+      uses: sonatype/github-actions/evaluate@v0
+      with:
+        username: ${{ secrets.SSA_USERNAME }}
+        password: ${{ secrets.SSA_PASSWORD }}
+        iq-server-url: https://sonatype.sonatype.app/platform
+        application-id: jcava-test-app2
+        result-file: result
+        keep-scan-file: true
+        scan-targets: pom.xml
+        organization-id: 2dfcccf06b8f4920a2a3261076c7eee0
+        debug: false
+        ignore-system-errors: true
+        ignore-scanning-errors: true
+
+    - name: Fetch SBOM
+      uses: sonatype/github-actions/fetch-sbom@v0
+      if: always()
+      with:
+        scan-id: ${{ steps.evaluate.outputs.scan-id }}
+        application-id: jcava-test-app2
+        sbom-standard: spdx
+        # sbom-format: xml
+        file-name: sbom-file
+        sbom-version: 1.5
+        iq-server-url: https://sonatype.sonatype.app/platform
+        username: ${{ secrets.SSA_USERNAME }}
+        password: ${{ secrets.SSA_PASSWORD }}
+        push-dependency-graph: true
