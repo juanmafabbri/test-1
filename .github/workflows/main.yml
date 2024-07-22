@@ -21,7 +21,7 @@ jobs:
     
     - name: IQ Evaluate
       id: evaluate
-      uses: sonatype/github-actions/evaluate@v0
+      uses: sonatype/actions/evaluate@v1
       with:
         username: ${{ secrets.SSA_USERNAME }}
         password: ${{ secrets.SSA_PASSWORD }}
@@ -36,7 +36,7 @@ jobs:
         ignore-scanning-errors: true
 
     - name: Fetch SBOM
-      uses: sonatype/github-actions/fetch-sbom@v0
+      uses: sonatype/actions/fetch-sbom@v1
       if: always()
       with:
         scan-id: ${{ steps.evaluate.outputs.scan-id }}
