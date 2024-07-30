@@ -26,7 +26,7 @@ jobs:
         username: ${{ secrets.SSA_USERNAME }}
         password: ${{ secrets.SSA_PASSWORD }}
         iq-server-url: https://sonatype.sonatype.app/platform
-        application-id: jcava-test-app2
+        application-id: testdata
         result-file: result
         keep-scan-file: true
         scan-targets: pom.xml
