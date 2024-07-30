@@ -30,14 +30,13 @@ jobs:
         result-file: result
         keep-scan-file: true
         scan-targets: pom.xml
-        organization-id: 2dfcccf06b8f4920a2a3261076c7eee0
         debug: false
         ignore-system-errors: true
         ignore-scanning-errors: true
 
     - name: Fetch SBOM
       uses: sonatype/actions/fetch-sbom@v1
-      if: always()
+      if: ( success() || failure() ) && steps.evaluate.outputs.scan-id 
       with:
         scan-id: ${{ steps.evaluate.outputs.scan-id }}
         application-id: jcava-test-app2
