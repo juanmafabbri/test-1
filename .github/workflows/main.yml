@@ -41,9 +41,8 @@ jobs:
         scan-id: ${{ steps.evaluate.outputs.scan-id }}
         application-id: jcava-test-app2
         sbom-standard: spdx
-        # sbom-format: xml
-        file-name: sbom-file
-        sbom-version: 1.5
+        sbom-format: json
+        sbom-version: 2.3
         iq-server-url: https://sonatype.sonatype.app/platform
         username: ${{ secrets.SSA_USERNAME }}
         password: ${{ secrets.SSA_PASSWORD }}
