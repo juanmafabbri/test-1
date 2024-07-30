@@ -39,7 +39,7 @@ jobs:
       if: ( success() || failure() ) && steps.evaluate.outputs.scan-id 
       with:
         scan-id: ${{ steps.evaluate.outputs.scan-id }}
-        application-id: jcava-test-app2
+        application-id: testdata
         sbom-standard: spdx
         sbom-format: json
         sbom-version: 2.3
