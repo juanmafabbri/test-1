@@ -45,7 +45,7 @@ pipeline {
             enable: true,
             entrypointStrategy: [
               $class: ’NamesStrategy’,
-              name: 'ACCESIBLE_CONCRETE'
+              name: 'JAVA_MAIN'
             ]
           ]
       }
