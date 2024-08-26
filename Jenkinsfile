@@ -40,8 +40,14 @@ pipeline {
             [scanPattern: '**'],
             [scanPattern: '!*.zip']
           ],
-          failBuildOnNetworkError: true
-
+          failBuildOnNetworkError: true,
+          callflow: [
+            enable: true,
+            entrypointStrategy: [
+              $class: 'MyApp',
+              name: 'ACCESIBLE_CONCRETE'
+            ]
+          ]
       }
 
     }
