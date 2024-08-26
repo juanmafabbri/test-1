@@ -44,7 +44,7 @@ pipeline {
           callflow: [
             enable: true,
             entrypointStrategy: [
-              $class: ’NamedStrategy’,
+              $class: 'NamedStrategy',
               name: 'JAVA_MAIN'
             ]
           ]
