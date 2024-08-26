@@ -44,7 +44,7 @@ pipeline {
           callflow: [
             enable: true,
             entrypointStrategy: [
-              $class: 'MyApp',
+              $class: ’NamesStrategy’,
               name: 'ACCESIBLE_CONCRETE'
             ]
           ]
