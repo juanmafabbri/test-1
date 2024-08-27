@@ -1,11 +1,13 @@
 
 // import org.apache.commons.text.StringSubstitutor;
 
-import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 
 public class MyApp {
 
-    static Logger logger = Logger.getLogger(MyApp.class.getName());
+    static Logger logger = LogManager.getLogger(MyApp.class);
 
     public static void main(String[] args) {
         System.out.println("Hello, World!");
