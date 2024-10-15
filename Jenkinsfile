@@ -19,9 +19,9 @@ pipeline {
 
         sh 'java -version'
         // sh 'mvn -B -DskipTests clean package'                 
-        sh 'mvn -B -DskipTests clean install dependency:copy-dependencies'
+        sh 'mvn -B clean install dependency:copy-dependencies'
 
-        nexusPolicyEvaluation iqStage: 'build', iqApplication: 'testapp', iqInstanceId: 'SONA',
+        nexusPolicyEvaluation iqStage: 'build', iqApplication: 'testapp', iqInstanceId: 'local',
           //el de abajo funcionando con mis cambios
           //iqScanPatterns: [[scanPattern: '**'], [scanPattern: '!*.zip']]
           //iqScanPatterns: [[scanPattern: '**'], [scanPattern: ' '], [scanPattern: '!*.zip']]
