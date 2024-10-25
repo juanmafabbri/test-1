@@ -1,0 +1,4 @@
+iq-for-vscode:
+    # applicationId: testdata
+    includeDev: true
+    type: [npm, maven]
