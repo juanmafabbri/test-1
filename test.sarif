@@ -323,15 +323,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 74
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.apache.shiro:shiro-core:1.13.0",
+         "fullyQualifiedName": "org.apache.shiro/shiro-core:1.13.0",
          "kind": "module"
         }
        ]
@@ -347,15 +347,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 56
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.apache.logging.log4j:log4j-core:2.15.0",
+         "fullyQualifiedName": "org.apache.logging.log4j/log4j-core:2.15.0",
          "kind": "module"
         }
        ]
@@ -371,15 +371,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 56
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.apache.logging.log4j:log4j-core:2.15.0",
+         "fullyQualifiedName": "org.apache.logging.log4j/log4j-core:2.15.0",
          "kind": "module"
         }
        ]
@@ -395,15 +395,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 51
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "com.fasterxml.jackson.core:jackson-core:2.14.3",
+         "fullyQualifiedName": "com.fasterxml.jackson.core/jackson-core:2.14.3",
          "kind": "module"
         }
        ]
@@ -419,15 +419,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 45
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.owasp.webgoat:webgoat-container:7.1",
+         "fullyQualifiedName": "org.owasp.webgoat/webgoat-container:7.1",
          "kind": "module"
         }
        ]
@@ -443,15 +443,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 45
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.owasp.webgoat:webgoat-container:7.1",
+         "fullyQualifiedName": "org.owasp.webgoat/webgoat-container:7.1",
          "kind": "module"
         }
        ]
@@ -467,15 +467,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 56
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.apache.logging.log4j:log4j-core:2.15.0",
+         "fullyQualifiedName": "org.apache.logging.log4j/log4j-core:2.15.0",
          "kind": "module"
         }
        ]
@@ -491,15 +491,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 56
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.apache.logging.log4j:log4j-core:2.15.0",
+         "fullyQualifiedName": "org.apache.logging.log4j/log4j-core:2.15.0",
          "kind": "module"
         }
        ]
@@ -515,15 +515,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 68
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.mockito:mockito-core:3.12.4",
+         "fullyQualifiedName": "org.mockito/mockito-core:3.12.4",
          "kind": "module"
         }
        ]
@@ -539,15 +539,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 51
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "com.fasterxml.jackson.core:jackson-core:2.14.3",
+         "fullyQualifiedName": "com.fasterxml.jackson.core/jackson-core:2.14.3",
          "kind": "module"
         }
        ]
@@ -563,15 +563,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 56
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.apache.logging.log4j:log4j-core:2.15.0",
+         "fullyQualifiedName": "org.apache.logging.log4j/log4j-core:2.15.0",
          "kind": "module"
         }
        ]
@@ -587,15 +587,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 68
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.mockito:mockito-core:3.12.4",
+         "fullyQualifiedName": "org.mockito/mockito-core:3.12.4",
          "kind": "module"
         }
        ]
@@ -611,15 +611,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 45
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.owasp.webgoat:webgoat-container:7.1",
+         "fullyQualifiedName": "org.owasp.webgoat/webgoat-container:7.1",
          "kind": "module"
         }
        ]
@@ -635,15 +635,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 68
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.mockito:mockito-core:3.12.4",
+         "fullyQualifiedName": "org.mockito/mockito-core:3.12.4",
          "kind": "module"
         }
        ]
@@ -659,15 +659,15 @@
       {
        "physicalLocation": {
         "artifactLocation": {
-         "uri": "unknown"
+         "uri": "pom.xml"
         },
         "region": {
-         "startLine": 1
+         "startLine": 74
         }
        },
        "logicalLocations": [
         {
-         "fullyQualifiedName": "org.apache.shiro:shiro-core:1.13.0",
+         "fullyQualifiedName": "org.apache.shiro/shiro-core:1.13.0",
          "kind": "module"
         }
        ]
