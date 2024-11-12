@@ -21,7 +21,7 @@ jobs:
     
     - name: IQ Evaluate
       id: evaluate
-      uses: sonatype/actions/evaluate@v1
+      uses: github.com/sonatype/actions/evaluate@v1
       with:
         username: ${{ secrets.SSA_USERNAME }}
         password: ${{ secrets.SSA_PASSWORD }}
