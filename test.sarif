@@ -11,10 +11,10 @@
      "informationUri": "https://www.sonatype.com",
      "rules": [
       {
-       "id": "Security-Medium/shiro-core/0be1b27a729840978ffed6644982b62d",
+       "id": "Security-Medium/shiro-core/0be1b27a729840978ffed6644982b62e",
        "help": {
         "text": "ignored",
-        "markdown": "**Medium risk CVSS score** is in violation for the following reason(s):\n- Found security vulnerability sonatype-2016-0026 with severity >= 4 (severity = 4.8)\n- Found security vulnerability sonatype-2016-0026 with severity < 7 (severity = 4.8)\n\n\n*Explanation*\n\nApache Shiro is vulnerable to Authentication Bypass as the `remember me` cookie data never expires server side. The `remember me` cookie contains the user name encrypted with the AES algorithm. An issuance date check of the cookie (or any other timeframe enforcements) does not occur server-side, leaving the cookie valid indefinitely. If a remote attacker can access the cookie of another user, they can impersonate the victim and perform any actions as the victim without any timeframe limitations.\n\n\n*Detection*\n\nThe application is vulnerable by using this component, using the default cipher key and exposing sensitive actions that have not been marked with `@RequiresAuthentication`.\n\n\n*Recommendation*\n\nWe did not find a non-vulnerable version of this component for this specific issue. We recommend investigating alternative technologies or a workaround. \n\nWorkaround:\n> A possible workaround is to implement your own remember me manager by extending the CookieRememberMeManager class.\n\n\n*Advisories*\n- https://issues.apache.org/jira/browse/SHIRO-561\n\n\nCheck the [vulnerability details page](https://sonatype.sonatype.app/platform/assets/index.html#/vulnerabilities/sonatype-2016-0026) for the latest details about this issue and possible recommendations."
+        "markdown": "**Medium risk CVSS score** is in violation for the following reason(s):\n- Found security vulnerability sonatype-2016-0026 with severity >= 4 (severity = 4.8)\n- Found security vulnerability sonatype-2016-0026 with severity < 7 (severity = 4.8)\n\n\n***Explanation***\n\nApache Shiro is vulnerable to Authentication Bypass as the `remember me` cookie data never expires server side. The `remember me` cookie contains the user name encrypted with the AES algorithm. An issuance date check of the cookie (or any other timeframe enforcements) does not occur server-side, leaving the cookie valid indefinitely. If a remote attacker can access the cookie of another user, they can impersonate the victim and perform any actions as the victim without any timeframe limitations.\n\n\n***Detection***\n\nThe application is vulnerable by using this component, using the default cipher key and exposing sensitive actions that have not been marked with `@RequiresAuthentication`.\n\n\n***Recommendation***\n\nWe did not find a non-vulnerable version of this component for this specific issue. We recommend investigating alternative technologies or a workaround. \n\n***Workaround:***\n> A possible workaround is to implement your own remember me manager by extending the CookieRememberMeManager class.\n\n\n***Advisories***\n- https://issues.apache.org/jira/browse/SHIRO-561\n\n\nCheck the [vulnerability details page](https://sonatype.sonatype.app/platform/assets/index.html#/vulnerabilities/sonatype-2016-0026) for the latest details about this issue and possible recommendations."
        },
        "shortDescription": {
         "text": "Security-Medium violation found for shiro-core@1.13.0"
@@ -315,7 +315,7 @@
    },
    "results": [
     {
-     "ruleId": "Security-Medium/shiro-core/0be1b27a729840978ffed6644982b62d",
+     "ruleId": "Security-Medium/shiro-core/0be1b27a729840978ffed6644982b62e",
      "message": {
       "text": "Security-Medium violation found for shiro-core@1.13.0"
      },
