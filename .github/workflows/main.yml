@@ -33,6 +33,7 @@ jobs:
         debug: false
         ignore-system-errors: true
         ignore-scanning-errors: true
+        lalal: true
 
     - name: Fetch SBOM
       uses: sonatype/actions/fetch-sbom@v1
