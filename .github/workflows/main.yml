@@ -21,7 +21,7 @@ jobs:
     
     - name: IQ Evaluate
       id: evaluate
-      uses: sonatype/actions/evaluate@v1
+      uses: sonatype/actions/evaluate@v1.0.6-beta
       with:
         username: ${{ secrets.SSA_USERNAME }}
         password: ${{ secrets.SSA_PASSWORD }}
@@ -33,7 +33,7 @@ jobs:
         debug: false
         ignore-system-errors: true
         ignore-scanning-errors: true
-        lalal: true
+        sarif-file: myfile.sarif
 
     - name: Fetch SBOM
       uses: sonatype/actions/fetch-sbom@v1
