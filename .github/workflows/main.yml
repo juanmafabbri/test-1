@@ -35,16 +35,16 @@ jobs:
         ignore-scanning-errors: true
         sarif-file: myfile.sarif
 
-    - name: Fetch SBOM
-      uses: sonatype/actions/fetch-sbom@v1
-      if: ( success() || failure() ) && steps.evaluate.outputs.scan-id 
-      with:
-        scan-id: ${{ steps.evaluate.outputs.scan-id }}
-        application-id: testdata
-        sbom-standard: spdx
-        sbom-format: json
-        sbom-version: 2.3
-        iq-server-url: https://sonatype.sonatype.app/platform
-        username: ${{ secrets.SSA_USERNAME }}
-        password: ${{ secrets.SSA_PASSWORD }}
-        push-dependency-graph: true
+    # - name: Fetch SBOM
+    #   uses: sonatype/actions/fetch-sbom@v1
+    #   if: ( success() || failure() ) && steps.evaluate.outputs.scan-id 
+    #   with:
+    #     scan-id: ${{ steps.evaluate.outputs.scan-id }}
+    #     application-id: testdata
+    #     sbom-standard: spdx
+    #     sbom-format: json
+    #     sbom-version: 2.3
+    #     iq-server-url: https://sonatype.sonatype.app/platform
+    #     username: ${{ secrets.SSA_USERNAME }}
+    #     password: ${{ secrets.SSA_PASSWORD }}
+    #     push-dependency-graph: true
