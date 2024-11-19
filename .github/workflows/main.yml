@@ -34,6 +34,7 @@ jobs:
         ignore-system-errors: true
         ignore-scanning-errors: true
         sarif-file: myfile.sarif
+        upload-sarif-file: true
 
     # - name: Fetch SBOM
     #   uses: sonatype/actions/fetch-sbom@v1
